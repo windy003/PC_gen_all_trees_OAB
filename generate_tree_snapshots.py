@@ -111,7 +111,7 @@ def parse_arguments():
     
     parser.add_argument('--exclude', 
                        nargs='*',
-                       default=[".git"],
+                       default=[".claude",".git",".gradle",".idea","build","dist","node_modules","app/build"],
                        help='要排除的目录或文件 (默认: %(default)s)')
     
     parser.add_argument('--output_dir', 
